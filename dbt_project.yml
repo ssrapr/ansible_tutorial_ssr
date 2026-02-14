@@ -1,0 +1,11 @@
+name: my_dbt_project      # Your project name
+version: '1.0'
+config-version: 2
+
+profile: default          # The connection profile (dbt Cloud usually manages this automatically)
+target-path: "target"     # Where compiled SQL files will be stored
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+model-paths: ["models"]   # Points to your models folder
