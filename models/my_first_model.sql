@@ -2,9 +2,9 @@
 
 -- This will create a table/view in Redshift
 {{ config(
-    materialized='category'
+    materialized='table'
 ) }}
 
 SELECT *
-FROM tickit.category
+FROM tickit."category"
 LIMIT 10;
