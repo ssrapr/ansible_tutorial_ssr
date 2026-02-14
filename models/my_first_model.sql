@@ -7,4 +7,4 @@
 
 SELECT *
 FROM tickit."category"
-LIMIT 10;
+LIMIT 10
